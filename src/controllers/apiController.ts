@@ -19,7 +19,7 @@ export const name = (req: Request, res: Response) => {
 export const createPhrase = async (req: Request, res: Response) => {
   let { author, content } = req.body
   let phrase = await Phrase.create({ author, content })
-  res.status(201)
+  res.status(202)
   res.json({ id: phrase.id, author, content })
 }
 
