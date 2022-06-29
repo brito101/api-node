@@ -9,7 +9,9 @@ router.get("/name/:name", ApiController.name)
 
 router.post("/phrases", ApiController.createPhrase)
 router.get("/phrases", ApiController.listPhrases)
-router.get("/phrases/:id", ApiController.getPhrase)
-router.put("/phrases/:id", ApiController.editPhrase)
+router.get("/phrases/random", ApiController.randomPhrase)
+router.get("/phrase/:id", ApiController.getPhrase)
+router.put("/phrase/:id", ApiController.editPhrase)
+router.delete("/phrase/:id", ApiController.deletePhrase)
 
 export default router
